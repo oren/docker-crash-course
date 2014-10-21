@@ -5,9 +5,9 @@ The session will be hands-on, everyone bring his/her laptop.
 Goal: to help anyone to run his projects using docker.
 
 Agenda:
-5 minutes - docker basics (what's the value, the use-cases and some docker terminology)
-5 minutes - demo of setting up YPLabs and deploying to mesos
-20 minutes - attendees will setup and run YPLabs on their laptop
+5 minutes - docker basics (what's the value, the use-cases and some docker terminology).
+5 minutes - demo of setting up YPLabs and deploying to mesos.
+20 minutes - attendees will setup and run YPLabs on their laptop.
 
 Outcome: Attendies will get familiar with docker and will be able to use it for their own projects.
 
@@ -55,6 +55,11 @@ hands-on
 Attendees set up YPLabs on their laptops
 curl -sSL http://0.0.0.0:8000/setup | sudo sh
 
+before the session
+------------------
+Please install docker before the session. It's available on all platforms - https://docs.docker.com/installation/#installation
+You know it's working when running 'Docker' prints the help. If you have any issues or questions email me - ogolan@yp.com.
+
 ## notes
 
 There's no virtualization going on at all, it's cgroups and namespaces.
@@ -81,6 +86,11 @@ cgroups allow you to set resource limits for processes, and docker has options t
 on ssvm
 sudo yum install docker-io
 
-git-export <branch-name>
+git revert --no-commit a7a140cb82e3e4e817a59429fb31456b247a3843; git reset
+cp -r labs /tmp
+cd /tmp && tar czf labs.tar.gz labs
 put on desktop or mogway
-wget http://0.0.0.0:8000/auto-tests.tgz && tar xzf auto-tests.tgz && rm auto-tests.tgz && cd auto-tests
+setup: wget -O- http://0.0.0.0:8000/labs.tar.gz | tar xzf - && cd labs
+curl -sSL http://0.0.0.0:8000/setup | sudo sh
+
+git-export <branch-name>
