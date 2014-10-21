@@ -93,4 +93,6 @@ put on desktop or mogway
 setup: wget -O- http://0.0.0.0:8000/labs.tar.gz | tar xzf - && cd labs
 curl -sSL http://0.0.0.0:8000/setup | sudo sh
 
-git-export <branch-name>
+docker save sample > sample.tar
+docker load -i sample.tar
+
