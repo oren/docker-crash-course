@@ -60,6 +60,10 @@ before the session
 Please install docker before the session. It's available on all platforms - https://docs.docker.com/installation/#installation
 You know it's working when running 'Docker' prints the help. If you have any issues or questions email me - ogolan@yp.com.
 
+## slides
+
+tslide slides.md
+
 ## notes
 
 There's no virtualization going on at all, it's cgroups and namespaces.
