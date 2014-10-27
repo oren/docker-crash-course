@@ -78,6 +78,7 @@ docker run --name web_server web_server  # create a container, name it web_serve
 
 ```
 sudo docker run private.registry.com:5000/labs_webserver
+docker run -d -p 80:2368 dockerfile/ghost
 ```
 
 ---
