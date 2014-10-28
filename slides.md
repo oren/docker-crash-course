@@ -4,6 +4,17 @@ image of a whale with containers
 
 ---
 
+# Intro
+
+Interest
+Need
+Time
+Response - mailing lists: mesos-dev, docke-dev
+Objectives - familiarity with docker and using it on your own projects
+
+---
+
+
 # History
 
 * PAAS
