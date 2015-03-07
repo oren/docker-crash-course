@@ -6,8 +6,8 @@ Goal: to help anyone to run his projects using docker.
 
 Agenda:
 5 minutes - docker basics (what's the value, the use-cases and some docker terminology).
-5 minutes - demo of setting up YPLabs and deploying to mesos.
-20 minutes - attendees will setup and run YPLabs on their laptop.
+5 minutes - demo of setting up and deploying to mesos.
+20 minutes - attendees will setup and run docker on their laptop.
 
 Outcome: Attendies will get familiar with docker and will be able to use it for their own projects.
 
@@ -42,23 +42,6 @@ terminology
 
   run                                    # image -> container
   docker run web_server web_server       # create a container
-
-demo
-----
-make docker
-ssh labs
-sudo docker tag 9360a67aabce ypcom/labs_db
-sudo docker push ypcom/labs_db
-
-hands-on
---------
-Attendees set up YPLabs on their laptops
-curl -sSL http://0.0.0.0:8000/setup | sudo sh
-
-before the session
-------------------
-Please install docker before the session. It's available on all platforms - https://docs.docker.com/installation/#installation
-You know it's working when running 'Docker' prints the help. If you have any issues or questions email me - ogolan@yp.com.
 
 ## slides
 
@@ -99,4 +82,3 @@ curl -sSL http://0.0.0.0:8000/setup | sudo sh
 
 docker save sample > sample.tar
 docker load -i sample.tar
-
