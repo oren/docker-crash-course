@@ -1,15 +1,4 @@
-# docker crash course
-
-The session will be hands-on, everyone bring his/her laptop.
-
-Goal: to help anyone to run his projects using docker.
-
-Agenda:
-5 minutes - docker basics (what's the value, the use-cases and some docker terminology).
-5 minutes - demo of setting up and deploying to mesos.
-20 minutes - attendees will setup and run docker on their laptop.
-
-Outcome: Attendies will get familiar with docker and will be able to use it for their own projects.
+# Docker Crash Course
 
 intro
 -----
@@ -43,42 +32,37 @@ terminology
   run                                    # image -> container
   docker run web_server web_server       # create a container
 
-## slides
-
-tslide slides.md
 
 ## notes
 
-There's no virtualization going on at all, it's cgroups and namespaces.
-containers share the same kernel with the host OS.
-CentOS and Ubuntu are not different operating systems. They are just different collections of packages that use Linux (the OS)
-Linux = OS
-Debian/Ubuntu/CentOS = distros
-Docker starts up a process, and it uses cgroups, namespaces, etc to give that process disks, network, etc.
-The fact that the process wakes up and sees CentOS or Debian or whatever around is has to do with which "disk" gets handed to it.
+    There's no virtualization going on at all, it's cgroups and namespaces.
+    containers share the same kernel with the host OS.
+    CentOS and Ubuntu are not different operating systems. They are just different collections of packages that use Linux (the OS)
+    Linux = OS
+    Debian/Ubuntu/CentOS = distros
+    Docker starts up a process, and it uses cgroups, namespaces, etc to give that process disks, network, etc.
+    The fact that the process wakes up and sees CentOS or Debian or whatever around is has to do with which "disk" gets handed to it.
 
-Imagine you work at Walmart. Regular processes can walk around the store and see all the things you sell.
-Docker lets you put somebody in the Vegetable isle and prevent them from leaving it.
-As far as that process knows, there is only the vegetable isle, and your store is just a vegetable isle.
-If you asked that process what the stores sells, it would tell you "well it clearly sells vegetables"
-does the vegetable section have its own checkout lanes?
-No, if the store owner wants that process to be able to get vegetables in and out of the store, they need to set up an aisle forward with the -p flag
+    Imagine you work at Walmart. Regular processes can walk around the store and see all the things you sell.
+    Docker lets you put somebody in the Vegetable isle and prevent them from leaving it.
+    As far as that process knows, there is only the vegetable isle, and your store is just a vegetable isle.
+    If you asked that process what the stores sells, it would tell you "well it clearly sells vegetables"
+    does the vegetable section have its own checkout lanes?
+    No, if the store owner wants that process to be able to get vegetables in and out of the store, they need to set up an aisle forward with the -p flag
 
-vegetable section = chroot / container
+    vegetable section = chroot / container
 
-cgroups allow you to set resource limits for processes, and docker has options to control cgroups
+    cgroups allow you to set resource limits for processes, and docker has options to control cgroups
 
+    on ssvm
+    sudo yum install docker-io
 
+    git revert --no-commit a7a140cb82e3e4e817a59429fb31456b247a3843; git reset
+    cp -r labs /tmp
+    cd /tmp && tar czf labs.tar.gz labs
+    put on desktop or mogway
+    setup: wget -O- http://0.0.0.0:8000/labs.tar.gz | tar xzf - && cd labs
+    curl -sSL http://0.0.0.0:8000/setup | sudo sh
 
-on ssvm
-sudo yum install docker-io
-
-git revert --no-commit a7a140cb82e3e4e817a59429fb31456b247a3843; git reset
-cp -r labs /tmp
-cd /tmp && tar czf labs.tar.gz labs
-put on desktop or mogway
-setup: wget -O- http://0.0.0.0:8000/labs.tar.gz | tar xzf - && cd labs
-curl -sSL http://0.0.0.0:8000/setup | sudo sh
-
-docker save sample > sample.tar
-docker load -i sample.tar
+    docker save sample > sample.tar
+    docker load -i sample.tar

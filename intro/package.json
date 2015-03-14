@@ -1,0 +1,23 @@
+{
+  "name": "developer",
+  "version": "1.0.0",
+  "description": "intro ----- use-cases   setup a project   deploy to production",
+  "main": "index.js",
+  "dependencies": {
+    "tslide": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oren/docker-crash-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oren/docker-crash-course/issues"
+  },
+  "homepage": "https://github.com/oren/docker-crash-course"
+}
