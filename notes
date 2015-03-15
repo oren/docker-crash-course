@@ -7,3 +7,6 @@ example for dev flow:
   donate
   android/cordova
   hugo
+
+Strangler Application
+http://martinfowler.com/bliki/StranglerApplication.html
