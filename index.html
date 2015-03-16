@@ -8,10 +8,7 @@
 	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
 </head>
 <body class="list">
-	<header class="caption">
-		<h1>Docker Crash Course</h1>
-		<p>Yours Truly, Famous Inc.</p>
-	</header>
+	<header class="caption"></header>
 	<section class="slide cover" id="Cover"><div>
 		<h2>Docker Crash Course</h2>
 		<p>Oren Golan</p>
@@ -47,9 +44,53 @@
       <ol>
         <li>What is Docker</li>
         <li>What does it solve</li>
-        <li>How to use it for development</li>
-        <li>How to use it for deployment/production</li>
+        <li>How to use it for development work flow</li>
+        <li>How to use it for deployment/production work flow</li>
       </ol>
+    </div>
+  </section>
+
+	<section class="slide shout">
+    <div>
+      <h2>1. What is Docker</h2>
+    </div>
+  </section>
+
+	<section class="slide shout">
+    <div>
+      <ul>
+        <li>Background - Separate slides</li>
+      </ul>
+    </div>
+  </section>
+
+	<section class="slide cover">
+    <div>
+      <img src="pictures/vms.png" alt="">
+    </div>
+  </section>
+
+	<section class="slide cover">
+    <div>
+      <img src="pictures/flow.png" alt="">
+    </div>
+  </section>
+
+	<section class="slide cover">
+    <div>
+      <img src="pictures/overview.png" alt="">
+    </div>
+  </section>
+
+	<section class="slide cover">
+    <div>
+      <img src="pictures/echosystem.png" alt="">
+    </div>
+  </section>
+
+	<section class="slide shout">
+    <div>
+      <h2>2. What Does Docker solve</h2>
     </div>
   </section>
 
@@ -93,43 +134,52 @@
 
 	<section class="slide cover">
     <div>
-      <img src="pictures/yak-shaving.jpg" alt="">
-    </div>
-  </section>
-
-	<section class="slide cover">
-    <div>
       <img src="pictures/rick-dalzell.jpg" alt="">
     </div>
   </section>
 
-	<section class="slide shout">
+	<section class="slide">
     <div>
-      <h2>Demo</h2>
+      <h2>3. Development work flow</h2>
     </div>
   </section>
 
 	<section class="slide cover">
     <div>
-      <img src="pictures/vms.png" alt="">
+      <img src="pictures/yak-shaving.jpg" alt="">
+    </div>
+  </section>
+
+	<section class="slide">
+    <div>
+      <h2>Examples</h2>
+       <ul>
+         <li>Node.js project with multiple dependencies</li>
+         <li>Cordova/Android</li>
+       </ul>
     </div>
   </section>
 
 	<section class="slide cover">
     <div>
-      <img src="pictures/flow.png" alt="">
+      <img src="pictures/docker.jpg" alt="">
     </div>
   </section>
 
-	<section class="slide cover">
+	<section class="slide">
     <div>
-      <img src="pictures/echosystem.png" alt="">
+      <h2>4. Deployment/Production work flow</h2>
     </div>
   </section>
 
-	<section class="slide cover">
+	<section class="slide">
     <div>
-      <img src="pictures/overview.png" alt="">
+      <h2>What do we need for running Docker in production?</h2>
+       <ul>
+         <li>Scheduler</li>
+         <li>Discovery</li>
+         <li>Registration</li>
+       </ul>
     </div>
   </section>
 
@@ -145,9 +195,55 @@
     </div>
   </section>
 
-	<section class="slide cover">
+	<section class="slide">
     <div>
-      <img src="pictures/docker.jpg" alt="">
+      <h2>Schedulers</h2>
+      <p>
+        Schedulers: fleet, marathon, swarm, mesos, kubernetes, compose
+      </p>
+
+      <h2>Discovery</h2>
+      <p>
+        discovery tools: etcd, consul, zookeeper
+      </p>
+
+      <h2>Discovery +</h2>
+      <p>
+        crypt, confd, vulcand, marathon, frontrunner, synapse, nerve
+      </p>
+    </div>
+  </section>
+
+	<section class="slide">
+    <div>
+      <h2>Work flow tools</h2>
+      <p>
+        Deis, Flynn, Paz, Mesos + Marathon
+      </p>
+    </div>
+  </section>
+
+	<section class="slide shout">
+    <div>
+      <h2>Deis Demo</h2>
+    </div>
+  </section>
+
+	<section class="slide shout">
+    <div>
+      <h2>add deis diagram</h2>
+    </div>
+  </section>
+
+	<section class="slide shout">
+    <div>
+      <h2>add deis diagram</h2>
+    </div>
+  </section>
+
+	<section class="slide shout">
+    <div>
+      <h2>add deis diagram</h2>
     </div>
   </section>
 
