@@ -10,3 +10,13 @@ example for dev flow:
 
 Strangler Application
 http://martinfowler.com/bliki/StranglerApplication.html
+
+blue green deploy
+CI
+CD
+
+networking: 
+  build it docker: -p and --link
+  tools that helps with networking: flannel, weave, pipework
+schedulers: fleet, marathon, swarm, mesos, kubernetes, compose
+discovery tools: etcd, consul, zookeeper, crypt, confd, vulcand, marathon, frontrunner, synapse, nerve
