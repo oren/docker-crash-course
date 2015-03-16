@@ -20,11 +20,9 @@ http://martinfowler.com/bliki/StranglerApplication.html
 
 Lean
 Monolith -> Micro Services
-challanges: complexity, transactions
+challenges: complexity, transactions
 benifits: scaling (apps and teams), isolation, less technogoly lock-in
 blue green deploy
-CI
-CD
 
 networking: 
   build it docker: -p and --link
