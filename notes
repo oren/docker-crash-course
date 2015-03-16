@@ -7,15 +7,21 @@ dev flow
 deployment/production flow
 
 
+
 pure coreos/fleet and setup my own ceph
-flow: deis, paz
+flow: deis, flynn, paz
 OS: rancher
-so many yaks, so little time - picture of yak shaving
+so many yaks, so little time
 
 
 Strangler Application
+video of strangler fig tree
 http://martinfowler.com/bliki/StranglerApplication.html
 
+Lean
+Monolith -> Micro Services
+challanges: complexity, transactions
+benifits: scaling (apps and teams), isolation, less technogoly lock-in
 blue green deploy
 CI
 CD
@@ -27,3 +33,4 @@ schedulers: fleet, marathon, swarm, mesos, kubernetes, compose
 discovery tools: etcd, consul, zookeeper, crypt, confd, vulcand, marathon, frontrunner, synapse, nerve
 
 lean enterprise
+cats vs cattle
