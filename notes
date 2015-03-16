@@ -1,12 +1,17 @@
+dev flow 
+  example
+    donate
+    android/cordova
+    hugo
+
+deployment/production flow
+
+
 pure coreos/fleet and setup my own ceph
 flow: deis, paz
 OS: rancher
 so many yaks, so little time - picture of yak shaving
 
-example for dev flow:
-  donate
-  android/cordova
-  hugo
 
 Strangler Application
 http://martinfowler.com/bliki/StranglerApplication.html
@@ -20,3 +25,5 @@ networking:
   tools that helps with networking: flannel, weave, pipework
 schedulers: fleet, marathon, swarm, mesos, kubernetes, compose
 discovery tools: etcd, consul, zookeeper, crypt, confd, vulcand, marathon, frontrunner, synapse, nerve
+
+lean enterprise
