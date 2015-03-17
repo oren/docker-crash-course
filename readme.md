@@ -17,13 +17,9 @@ Let's skip the boring concepts - we will look at a real-world Node.js applicatio
 
 ## References
 
-Strangler Application: http://martinfowler.com/bliki/StranglerApplication.html
-
-Docker Ecosystem series: https://www.digitalocean.com/community/tutorial_series/the-docker-ecosystem
-
-Conway Law
+* Strangler Application:  http://martinfowler.com/bliki/StranglerApplication.html
+* Docker Ecosystem series:  https://www.digitalocean.com/community/tutorial_series/the-docker-ecosystem
+* Conway Law: 
 http://www.thoughtworks.com/insights/blog/demystifying-conways-law
-
-Invese Conway Maneuver
-http://www.thoughtworks.com/radar/techniques
+* Inverse Conway Maneuver: http://www.thoughtworks.com/radar/techniques
 
