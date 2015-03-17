@@ -1,68 +1,29 @@
 # Docker Crash Course
 
-intro
------
-use-cases
-  setup a project
-  deploy to production
+![docker crash](pictures/docker-crash.jpg)
 
-value
-  fast dev cycle
-  fast deploy
-  quality (dev env identical to prod)
-  all team can take part (since it's trivial to setup a project)
-  laptop is clean (isolation)
-  easy to switch projects
-  entrepreneur mindset - autonomous teams
-  micro services
-  immutable infrastructure
-  decrease risk of change
+Docker is everywhere but nobody knows what to do with it.  
+The goal of this session is to provide you with everything you need to get started.
 
-terminology
-  image - template for container
-  container - chroot on steroids (isolated storage, networking, mounts, etc)
-  registry - a server that stores images
-  push - upload image to a repository
-  pull - download image from a repository
-  commit - create new image
+We'll discuss and demonstrate the following:
 
-  build                                  # Dockerfile -> image
-  docker build -t web_server .           # create an image
+* What is Docker?
+* What does docker solve?
+* How to use it for development work flow?
+* How to use it for deployment/production work flow?
 
-  run                                    # image -> container
-  docker run web_server web_server       # create a container
+Let's skip the boring concepts - we will look at a real-world Node.js application that uses multiple Docker containers.
 
 
-## notes
+## References
 
-    There's no virtualization going on at all, it's cgroups and namespaces.
-    containers share the same kernel with the host OS.
-    CentOS and Ubuntu are not different operating systems. They are just different collections of packages that use Linux (the OS)
-    Linux = OS
-    Debian/Ubuntu/CentOS = distros
-    Docker starts up a process, and it uses cgroups, namespaces, etc to give that process disks, network, etc.
-    The fact that the process wakes up and sees CentOS or Debian or whatever around is has to do with which "disk" gets handed to it.
+Strangler Application: http://martinfowler.com/bliki/StranglerApplication.html
 
-    Imagine you work at Walmart. Regular processes can walk around the store and see all the things you sell.
-    Docker lets you put somebody in the Vegetable isle and prevent them from leaving it.
-    As far as that process knows, there is only the vegetable isle, and your store is just a vegetable isle.
-    If you asked that process what the stores sells, it would tell you "well it clearly sells vegetables"
-    does the vegetable section have its own checkout lanes?
-    No, if the store owner wants that process to be able to get vegetables in and out of the store, they need to set up an aisle forward with the -p flag
+Docker Ecosystem series: https://www.digitalocean.com/community/tutorial_series/the-docker-ecosystem
 
-    vegetable section = chroot / container
+Conway Law
+http://www.thoughtworks.com/insights/blog/demystifying-conways-law
 
-    cgroups allow you to set resource limits for processes, and docker has options to control cgroups
+Invese Conway Maneuver
+http://www.thoughtworks.com/radar/techniques
 
-    on ssvm
-    sudo yum install docker-io
-
-    git revert --no-commit a7a140cb82e3e4e817a59429fb31456b247a3843; git reset
-    cp -r labs /tmp
-    cd /tmp && tar czf labs.tar.gz labs
-    put on desktop or mogway
-    setup: wget -O- http://0.0.0.0:8000/labs.tar.gz | tar xzf - && cd labs
-    curl -sSL http://0.0.0.0:8000/setup | sudo sh
-
-    docker save sample > sample.tar
-    docker load -i sample.tar

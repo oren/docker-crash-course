@@ -11,31 +11,37 @@
 	<header class="caption"></header>
 	<section class="slide cover" id="Cover"><div>
 		<h2>Docker Crash Course</h2>
-		<p>Oren Golan</p>
-		<p><a href="http://oren.github.io">oren.github.io</a></p>
-		<p><a href="https://twitter.com/oreng">@oreng</a></p>
-		<img src="pictures/fail.jpg" alt="">
+		<p class='name'>Oren Golan</p>
+		<p>oren.github.io</p>
+		<p>@oreng</p>
+
+		<img src="pictures/docker-crash.jpg" alt="">
 		<!--
 			To apply styles to the certain slides
 			set slide ID to get needed elements
 			-->
 		<style>
 			#Cover h2 {
-				margin:30px 0 0;
+				margin: 0px 0 0;
 				color:#000;
 				text-align:center;
-				font-size:90px;
-				}
+				font-size:120px;
+      }
+			#Cover .name {
+        margin-top: 30px;
+      }
 			#Cover p {
-				margin:10px 0 0;
+        font-weight: bold;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+				margin: -40px 0 0;
 				text-align:center;
-				color:#000;
-				font-style:italic;
-				font-size:40px;
-				}
-				#Cover p a {
-          color:#000;
-					}
+				color:#fff;
+				font-size:50px;
+      }
+      #Cover p a {
+        color:#fff;
+        text-decoration: none;
+      }
 		</style>
 	</div></section>
 
@@ -56,10 +62,41 @@
     </div>
   </section>
 
-	<section class="slide shout">
+	<section class="slide">
     <div>
+      <h2>History</h2>
       <ul>
-        <li>Background - Separate slides</li>
+        <li>PAAS</li>
+        <li>Heroku</li>
+        <li>DotCloud -> Docker</li>
+      </ul>
+    </div>
+  </section>
+
+	<section class="slide">
+    <div>
+      <h2>Containers</h2>
+      <ul>
+        <li>Chroot on steroids</li>
+        <li>Isolation of filesystem, network, mounts etc</li>
+        <li>The Walmart metaphor</li>
+      </ul>
+    </div>
+  </section>
+
+	<section class="slide cover">
+    <div>
+      <img src="pictures/overview.png" alt="">
+    </div>
+  </section>
+
+	<section class="slide">
+    <div>
+      <h2>Containers vs VMs</h2>
+      <ul>
+        <li>Isolated process vs isolated OS</li>
+        <li>Uses the host's kernel vs got it's own kernel</li>
+        <li>Low I/O over head (disk and network) vs high overhead</li>
       </ul>
     </div>
   </section>
@@ -70,15 +107,63 @@
     </div>
   </section>
 
-	<section class="slide cover">
+	<section class="slide">
     <div>
-      <img src="pictures/flow.png" alt="">
+      <h2>Value for Development</h2>
+      <ul>
+        <li>Fast dev cycle</li>
+        <li>Quality (dev env identical to prod)</li>
+        <li>All team can take part (since it's trivial to setup a project)</li>
+        <li>Laptop is clean (isolation)</li>
+        <li>Easy to switch projects</li>
+        <li>Entrepreneur mindset - autonomous teams</li>
+        <li>Micro services</li>
+      </ul>
+    </div>
+  </section>
+
+	<section class="slide">
+    <div>
+      <h2>Value for Ops</h2>
+      <ul>
+        <li>Fast deploy</li>
+        <li>Immutable infrastructure</li>
+        <li>Decrease risk of change</li>
+      </ul>
+    </div>
+  </section>
+
+	<section class="slide">
+    <div>
+      <h2>Terminology and basic commands</h2>
+      <ul>
+        <li>Image     - template for container</li>
+        <li>Container - your application (isolated storage, networking, mounts, etc)</li>
+        <li>Docker registry  - a server that stores images</li>
+        <li><mark>docker push</mark>      - upload image to a repository</li>
+        <li><mark>docker pull</mark>      - download image from a repository</li>
+        <li><mark>docker build</mark>     - Dockerfile -> image</li>
+        <li><mark>docker run</mark>       - image -> container</li>
+      </ul>
+    </div>
+  </section>
+
+	<section class="slide">
+    <div>
+      <h2>Examples</h2>
+
+      <pre>
+        <code># create an image, name it web_server</code>
+        <code><mark>docker build -t web_server .</mark></code>
+        <code># create a container, name it web_server</code>
+        <code><mark>docker run --name web_server web_server</mark></code>
+      </pre>
     </div>
   </section>
 
 	<section class="slide cover">
     <div>
-      <img src="pictures/overview.png" alt="">
+      <img src="pictures/flow.png" alt="">
     </div>
   </section>
 
@@ -108,6 +193,10 @@
     <div>
       <img src="pictures/conway.png" alt="">
     </div>
+  </section>
+
+	<section class="slide shout">
+    <h2>Inverse Conway Maneuver</h2>
   </section>
 
 	<section class="slide">
