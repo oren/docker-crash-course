@@ -5,7 +5,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=792, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+	<!-- <link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css"> -->
+	<link rel="stylesheet" href="shower/themes/bright/styles/screen.css">
 </head>
 <body class="list">
 	<header class="caption"></header>
@@ -22,7 +23,8 @@
 			-->
 		<style>
 			#Cover h2 {
-				margin: 0px 0 0;
+        font-weight: bold;
+				margin: 30px 0 0;
 				color:#000;
 				text-align:center;
 				font-size:120px;
@@ -127,7 +129,6 @@
       <h2>Value for Ops</h2>
       <ul>
         <li>Fast deploy</li>
-        <li>Immutable infrastructure</li>
         <li>Decrease risk of change</li>
       </ul>
     </div>
@@ -179,14 +180,27 @@
     </div>
   </section>
 
-	<section class="slide shout">
+	<section class="slide" id="strangler">
     <div>
       <h2>Strangler Application</h2>
     </div>
+		<style>
+			#strangler h2 {
+				font-size:120px;
+        /* font-weight: bold; */
+      }
+		</style>
   </section>
 
-	<section class="slide shout">
-    <h2>Conway Law</h2>
+	<section class="slide" id="conway">
+    <div>
+      <h2>Conway Law</h2>
+      <style>
+        #conway h2 {
+          font-size:120px;
+        }
+      </style>
+    </div>
   </section>
 
 	<section class="slide">
@@ -195,16 +209,25 @@
     </div>
   </section>
 
-	<section class="slide shout">
-    <h2>Inverse Conway Maneuver</h2>
+	<section class="slide" id="inverse">
+    <div>
+      <h2>Inverse Conway Maneuver</h2>
+      <style>
+        #inverse h2 {
+          font-size:120px;
+        }
+      </style>
+    </div>
   </section>
 
 	<section class="slide">
     <div>
+      <h2>Related Points</h2>
       <ul>
         <li>Lean</li>
         <li>Continueous Integration</li>
         <li>Continueous Deployment</li>
+        <li>Immutable Infrastructure</li>
         <li>Engineering Culture</li>
         <li>Company Culture</li>
       </ul>
@@ -227,7 +250,13 @@
     </div>
   </section>
 
-	<section class="slide">
+	<section class="slide cover">
+    <div>
+      <img src="pictures/door.jpg" alt="">
+    </div>
+  </section>
+
+	<section class="slide shout">
     <div>
       <h2>3. Development work flow</h2>
     </div>
@@ -255,9 +284,9 @@
     </div>
   </section>
 
-	<section class="slide">
+	<section class="slide shout">
     <div>
-      <h2>4. Deployment/Production work flow</h2>
+      <h2>4. Devops work flow</h2>
     </div>
   </section>
 
@@ -286,20 +315,11 @@
 
 	<section class="slide">
     <div>
-      <h2>Schedulers</h2>
-      <p>
-        Schedulers: fleet, marathon, swarm, mesos, kubernetes, compose
-      </p>
-
-      <h2>Discovery</h2>
-      <p>
-        discovery tools: etcd, consul, zookeeper
-      </p>
-
-      <h2>Discovery +</h2>
-      <p>
-        crypt, confd, vulcand, marathon, frontrunner, synapse, nerve
-      </p>
+      <ul>
+        <li><mark class="important">Schedulers:</mark>  fleet, marathon, swarm, mesos, kubernetes, compose</li>
+        <li><mark class="important">Discovery tools:</mark> etcd, consul, zookeeper</li>
+        <li><mark class="important">Discovery +:</mark> crypt, confd, vulcand, marathon, frontrunner, synapse, nerve</li>
+      </ul>
     </div>
   </section>
 
