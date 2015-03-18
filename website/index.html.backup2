@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Docker Crash Course</title>
+</head>
+<body class="list">
+	<header class="caption"></header>
+	<section class="slide cover" id="Cover"><div>
+		<h2>Docker Crash Course</h2>
+		<p class='name'>Oren Golan</p>
+		<p>oren.github.io</p>
+		<p>@oreng</p>
+</body>
+</html>
