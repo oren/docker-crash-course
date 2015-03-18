@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ $1 ]; then
+  docker build -t sanguinebio/docker-crash-course .
+  docker tag sanguinebio/docker-crash-course sanguinebio/docker-crash-course:$1
+  docker push sanguinebio/docker-crash-course:$1
+else
+  echo Please provide a version - ie: 1.0.0
+fi

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+mkdir /tmp/docker && cd /tmp/docker
+add ~/.ssh/deis
+deis create docker
+

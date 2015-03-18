@@ -34,11 +34,8 @@ open [http://localhost:3000](http://localhost:3000)
 
 ## Push this presentation to Dockerhub
 
-    docker build -t sanguinebio/docker-crash-course .
-    docker push sanguinebio/docker-crash-course
+    bin/push
 
 ## Deploy with Deis
 
-    docker build -t sanguinebio/docker-crash-course .
-    docker push sanguinebio/docker-crash-course
-    deis pull sanguinebio/docker-crash-course
+    bin/deploy
