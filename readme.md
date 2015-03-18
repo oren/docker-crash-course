@@ -2,7 +2,7 @@
 
 ![docker crash](website/pictures/intro.png)
 
-Docker is everywhere but nobody knows what to do with it.  
+Docker is everywhere but nobody knows what to do with it.
 The goal of this session is to provide you with everything you need to get started.
 
 We'll discuss and demonstrate the following:
@@ -19,7 +19,7 @@ Let's skip the boring concepts - we will look at a real-world Node.js applicatio
 
 * Strangler Application:  http://martinfowler.com/bliki/StranglerApplication.html
 * Docker Ecosystem series:  https://www.digitalocean.com/community/tutorial_series/the-docker-ecosystem
-* Conway Law: 
+* Conway Law:
 http://www.thoughtworks.com/insights/blog/demystifying-conways-law
 * Inverse Conway Maneuver: http://www.thoughtworks.com/radar/techniques
 * http://12factor.net/build-release-run
@@ -29,5 +29,5 @@ http://www.thoughtworks.com/insights/blog/demystifying-conways-law
 ## Push this presentation to Dockerhub
 
     docker build -t sanguinebio/docker-crash-course .
-    docker push sanguinebio/docker-crash-course 
-    docker run sanguinebio/docker-crash-course 
+    docker push sanguinebio/docker-crash-course
+    docker run -p 3000:80 sanguinebio/docker-crash-course
