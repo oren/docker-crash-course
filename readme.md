@@ -26,8 +26,13 @@ http://www.thoughtworks.com/insights/blog/demystifying-conways-law
 * Deploy with Deis: https://asciinema.org/a/17792
 * Scale App with Deis: https://asciinema.org/a/17793
 
+## Run this presentation
+
+    docker run -p 3000:80 sanguinebio/docker-crash-course
+
+open [http://localhost:3000](http://localhost:3000)
+
 ## Push this presentation to Dockerhub
 
     docker build -t sanguinebio/docker-crash-course .
     docker push sanguinebio/docker-crash-course
-    docker run -p 3000:80 sanguinebio/docker-crash-course
