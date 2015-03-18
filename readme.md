@@ -26,3 +26,7 @@ http://www.thoughtworks.com/insights/blog/demystifying-conways-law
 * Deploy with Deis: https://asciinema.org/a/17792
 * Scale App with Deis: https://asciinema.org/a/17793
 
+## Dockerhub
+
+    docker build -t sanguinebio/docker-crash-course .
+    docker push sanguinebio/docker-crash-course 
