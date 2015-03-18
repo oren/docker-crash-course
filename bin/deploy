@@ -1,7 +1,8 @@
 #!/bin/bash
 
 if [ $1 ]; then
-  bin/push
+  bin/push $1
+  cd /tmp/docker
   deis pull sanguinebio/docker-crash-course:$1
 else
   echo Please provide a version - ie: 1.0.0
