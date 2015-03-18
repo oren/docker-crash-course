@@ -1,6 +1,6 @@
 # Docker Crash Course
 
-![docker crash](pictures/docker-crash.jpg)
+![docker crash](website/pictures/intro.png)
 
 Docker is everywhere but nobody knows what to do with it.  
 The goal of this session is to provide you with everything you need to get started.
@@ -26,7 +26,8 @@ http://www.thoughtworks.com/insights/blog/demystifying-conways-law
 * Deploy with Deis: https://asciinema.org/a/17792
 * Scale App with Deis: https://asciinema.org/a/17793
 
-## Dockerhub
+## Push this presentation to Dockerhub
 
     docker build -t sanguinebio/docker-crash-course .
     docker push sanguinebio/docker-crash-course 
+    docker run sanguinebio/docker-crash-course 
