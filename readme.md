@@ -22,9 +22,10 @@ Let's skip the boring concepts - we will look at a real-world Node.js applicatio
 * Conway Law:
 http://www.thoughtworks.com/insights/blog/demystifying-conways-law
 * Inverse Conway Maneuver: http://www.thoughtworks.com/radar/techniques
-* http://12factor.net/build-release-run
+* The twelve-factor app - http://12factor.net/build-release-run
 * Deploy with Deis: https://asciinema.org/a/17792
 * Scale App with Deis: https://asciinema.org/a/17793
+* Lean Enterprise: How High Performance Organizations Innovate at Scale - http://www.amazon.com/Lean-Enterprise-Performance-Organizations-Innovate/dp/1449368425
 
 ## Run this presentation
 
