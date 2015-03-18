@@ -36,3 +36,9 @@ open [http://localhost:3000](http://localhost:3000)
 
     docker build -t sanguinebio/docker-crash-course .
     docker push sanguinebio/docker-crash-course
+
+## Deploy with Deis
+
+    docker build -t sanguinebio/docker-crash-course .
+    docker push sanguinebio/docker-crash-course
+    deis pull sanguinebio/docker-crash-course
