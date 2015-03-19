@@ -416,6 +416,7 @@
 
 	<section class="slide" id="deis-deploy">
     <h2>Deploy a Website to Deis</h2>
+    <p><mark>deis builds:create -a my-omg-lol-app</mark></p>
     <div>
       <script type="text/javascript" src="https://asciinema.org/a/17842.js" id="asciicast-17842" async></script>
     </div>
@@ -423,17 +424,24 @@
 			#deis-deploy {
         text-align: center;
       }
+			#deis-deploy p{
+        margin-top: -50px
+      }
     </style>
   </section>
 
 	<section class="slide" id="deis-scale">
     <h2>Scale a website with Deis</h2>
+    <p><mark>deis scale cmd=100 -a my-omg-lol-app</mark></p>
     <div>
       <script type="text/javascript" src="https://asciinema.org/a/17843.js" id="asciicast-17843" async></script>
     </div>
     <style>
 			#deis-scale {
         text-align: center;
+      }
+			#deis-scale p{
+        margin-top: -50px
       }
     </style>
   </section>
