@@ -2,7 +2,7 @@
 
 if [ $1 ]; then
   bin/push $1
-  deis pull sanguinebio/docker-crash-course:$1 -a docker
+  deis builds:create sanguinebio/docker-crash-course:$1 -a docker
 else
   echo Please provide a version - ie: 1.0.0
 fi
