@@ -49,6 +49,10 @@
   </section>
 
 	<section class="slide">
+      <img src="pictures/swag.png" alt="">
+  </section>
+
+	<section class="slide">
     <img src="pictures/maru2.png" alt="">
     <div>
       <ol>
@@ -66,7 +70,8 @@
     </div>
   </section>
 
-	<section class="slide">
+	<section class="slide" id="background">
+    <img src="pictures/maru-hana.gif" alt="">
     <div>
       <h2>Background</h2>
       <ul>
@@ -74,6 +79,12 @@
         <li>Heroku</li>
         <li>DotCloud -> Docker</li>
       </ul>
+		<style>
+			#background img {
+				float: right;
+        margin-top: 110px;
+      }
+		</style>
     </div>
   </section>
 
@@ -102,7 +113,7 @@
       <h2>Containers vs VMs</h2>
       <ul>
         <li>Isolated process vs isolated OS</li>
-        <li>Uses the host's kernel vs got it's own kernel</li>
+        <li>Uses the host's kernel vs got its own kernel</li>
         <li>Low I/O over head (disk and network) vs high overhead</li>
       </ul>
     </div>
@@ -122,7 +133,7 @@
       <ul>
         <li>Fast dev cycle</li>
         <li>Quality (dev env identical to prod)</li>
-        <li>All team can take part (since it's trivial to setup a project)</li>
+        <li>All team can take part (it's trivial to setup a project)</li>
         <li>Laptop is clean (isolation)</li>
         <li>Easy to switch projects</li>
         <li>Entrepreneur mindset - autonomous teams</li>
@@ -138,6 +149,7 @@
       <ul>
         <li>Fast deploy</li>
         <li>Decrease risk of change</li>
+        <li>Production similar to Development</li>
       </ul>
     </div>
 		<style>
@@ -266,8 +278,8 @@
       <h2>Related Points</h2>
       <ul>
         <li>Lean</li>
-        <li>Continueous Integration</li>
-        <li>Continueous Deployment</li>
+        <li>Continuous Integration</li>
+        <li>Continuous Deployment</li>
         <li>Immutable Infrastructure</li>
         <li>Engineering Culture</li>
         <li>Company Culture</li>
@@ -291,6 +303,7 @@
         }
         #amazon h2 {
           margin-top: 30px;
+          font-weight: bold;
         }
       </style>
     </div>
@@ -391,6 +404,18 @@
     </div>
   </section>
 
+	<section class="slide shout" id="thankyou">
+    <h2>Thank You!</h2>
+		<style>
+			#thankyou h2 {
+				/* margin: 30px 0 0; */
+				/* color:#000; */
+				text-align:center;
+				font-size:120px;
+        /* font-weight: bold; */
+      }
+		</style>
+  </section>
 
 	<!--
 		To hide progress bar from entire presentation
