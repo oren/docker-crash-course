@@ -10,6 +10,11 @@
 </head>
 <body class="list">
 	<header class="caption"></header>
+		<style>
+			.swag {
+        position: absolute;
+      }
+		</style>
 	<section class="slide cover" id="Cover"><div>
 		<img src="pictures/intro.png" alt="">
 		<!--
@@ -49,6 +54,7 @@
   </section>
 
 	<section class="slide">
+      <img src="pictures/starburst.png" alt="" class="swag">
       <img src="pictures/swag.png" alt="">
   </section>
 
@@ -71,7 +77,8 @@
   </section>
 
 	<section class="slide" id="background">
-    <img src="pictures/maru-hana.gif" alt="">
+      <img src="pictures/starburst.png" alt="" class="swag">
+    <img src="pictures/maru-hana.gif" alt="" id="maru-hana">
     <div>
       <h2>Background</h2>
       <ul>
@@ -80,7 +87,7 @@
         <li>DotCloud -> Docker</li>
       </ul>
 		<style>
-			#background img {
+			#background img#maru-hana {
 				float: right;
         margin-top: 110px;
       }
@@ -221,6 +228,7 @@
   </section>
 
 	<section class="slide" id="conway">
+    <img src="pictures/starburst.png" alt="" class="swag">
 		<img src="pictures/maru7.png" alt="">
     <div>
       <h2>Conway Law</h2>
@@ -294,6 +302,7 @@
   </section>
 
 	<section class="slide cover" id="amazon">
+    <img src="pictures/starburst.png" alt="" class="swag">
     <h2>You build it - You run it!</h2>
     <div>
       <img src="pictures/door.jpg" alt="">
@@ -304,6 +313,9 @@
         #amazon h2 {
           margin-top: 30px;
           font-weight: bold;
+        }
+        #amazon .swag {
+          z-index: 1;
         }
       </style>
     </div>
@@ -405,6 +417,7 @@
   </section>
 
 	<section class="slide shout" id="thankyou">
+    <img src="pictures/starburst.png" alt="" class="swag">
     <h2>Thank You!</h2>
 		<style>
 			#thankyou h2 {
