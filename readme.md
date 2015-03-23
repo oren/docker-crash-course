@@ -1,6 +1,11 @@
 # Docker Crash Course
 
-![docker crash](website/pictures/intro.png)
+Presentation at the [SoCal Node.js Meetup](http://www.meetup.com/SoCal-Node-JS/events/221022035)
+
+[![video](website/pictures/intro.png)](https://www.youtube.com/embed/KJ_xAwSeFR8)
+(Click on the image above to watch the video of the talk)
+
+## Description
 
 Docker is everywhere but nobody knows what to do with it.
 The goal of this session is to provide you with everything you need to get started.
